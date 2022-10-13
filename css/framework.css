@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.d-f {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.f-row {
+    flex-direction: row;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+@media (max-width: 767px) {
+    .grid-mobile {
+        grid-template-columns: 60px 1fr;
+    }
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+.s-around {
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.main-title {
+    position: relative;
+    width: fit-content;
+    padding: 15px 0 0;
+    margin-left: 20px;
+}
+
+.main-title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+    height: 3px;
+    bottom: -10px;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 35%;
+    background-color: #000;
+    height: 3px;
+    bottom: -10px;
+}
+
+.m-10 {
+    margin: 10px 0;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.c-orange {
+    color: #f59e0b;
+}
+
+.c-red {
+    color: #f44336;
+}
+
+.c-blue {
+    color: #0075ff;
+}
+
+.c-green {
+    color: #22c55e;
+}
+
+.c-white {
+    color: #fff;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.rad-8 {
+    border-radius: 8px;
+}
+
+.img-sz {
+    width: 30px;
+}
+
+.main-btn {
+    background-color: #0075ff;
+    color: #fff;
+    border-radius: 8px;
+    padding: 3px 5px;
+    font-size: 14px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-gray {
+    background-color: #EEEEEE;
+}
+
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+.badget-title {
+    padding: 15px 0;
+    color: var(--gray-clr);
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.f-right {
+    float: right;
+}
