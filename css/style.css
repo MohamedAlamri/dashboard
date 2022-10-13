@@ -55,7 +55,7 @@ body {
 }
 
 @media (max-width: 767px) {
-    .sidebar .container {
+    .sidebar {
         padding: 0;
     }
 }
@@ -222,10 +222,16 @@ body {
 }
 
 .wraber {
-    margin: 40px 20px 0;
+    margin: 40px 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .wraber {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -936,7 +942,7 @@ body {
 
 @media (max-width: 767px) {
     .table table {
-        width: 200%;
+        width: 420%;
     }
 }
 
